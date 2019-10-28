@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="formBody">
+
+            <h2 class="info"> Nombre: <input type="text" id="formName" ></h2>
+            <h2 class="info"> Apellido:<input type="text" id="formLastName"></h2>
+
+    <form action="/cualquierRuta" method="post" id="form">
+
+
+
+        <h2>Primera Medición</h2>
+        <input type="text" name="hourUno" id="formHourUno">
+        <input type="text" name="sistoleUno" id="formSistoleUno">
+        <input type="text" name="diastoleUno" id="formDiastoleUno">
+        <input type="text" name="bpmUno" id="formBpmUno">
+
+        <h2>Segunda Medición</h2>
+        <input type="text" name="hourDos" id="formHourDos">
+        <input type="text" name="sistoleDos" id="formSistoleDos">
+        <input type="text" name="diastoleDos" id="formDiastoleDos">
+        <input type="text" name="bpmDos" id="formBpmDos">
+
+        <h2>Tercera Medición</h2>
+        <input type="text" name="hourTres" id="formHourTres">
+        <input type="text" name="sistoleTres" id="formSistoleTres">
+        <input type="text" name="diastoleTres" id="formDiastoleTres">
+        <input type="text" name="bpmTres" id="formBpmTres">
+
+        <h2>Cuarta Medición</h2>
+        <input type="text" name="hourCuatro" id="formHourCuatro">
+        <input type="text" name="sistoleCuatro" id="formSistoleCuatro">
+        <input type="text" name="diastoleCuatro" id="formDiastoleCuatro">
+        <input type="text" name="bpmCuatro" id="formBpmCuatro">
+
+        <h2>Quinta Medición</h2>
+        <input type="text" name="hourCinco" id="formHourCinco">
+        <input type="text" name="sistoleCinco" id="formSistoleCinco">
+        <input type="text" name="diastoleCinco" id="formDiastoleCinco">
+        <input type="text" name="bpmCinco" id="formBpmCinco">
+        
+        <button type="submit">Enviar</button>
+    </form>
+
+    <button id="generar">Generar</button>
+
+    <script src="js/form.js"></script>
+
+</section>
+</body>
+
+</html>

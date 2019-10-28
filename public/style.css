@@ -1,0 +1,908 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100i");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300i");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400i");
+@import url("https://fonts.googleapis.com/css?family=Poppins:500");
+@import url("https://fonts.googleapis.com/css?family=Poppins:500i");
+@import url("https://fonts.googleapis.com/css?family=Poppins:600");
+@import url("https://fonts.googleapis.com/css?family=Poppins:600i");
+@import url("https://fonts.googleapis.com/css?family=Poppins:700");
+@import url("https://fonts.googleapis.com/css?family=Poppins:700i");
+@import url("https://fonts.googleapis.com/css?family=Poppins:800");
+@import url("https://fonts.googleapis.com/css?family=Poppins:800i");
+@import url("https://fonts.googleapis.com/css?family=Poppins:900");
+@import url("https://fonts.googleapis.com/css?family=Poppins:900i");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+body #formBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body #formBody .info {
+  margin-left: 48px;
+  margin-bottom: 3px;
+}
+
+body #formBody h2 {
+  font-size: 15px;
+}
+
+body #formBody button {
+  border-style: solid;
+  border-radius: 5px;
+  padding: 16px;
+  border-color: #a8a8ad;
+  width: 100px;
+  font-size: 16px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 8px;
+}
+
+body #formBody input {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #a8a8ad;
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 8px;
+}
+
+body #formBody #form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 8px;
+  height: 30%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #formBody #form input {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #a8a8ad;
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 8px;
+}
+
+body #formBody #form button {
+  border-style: solid;
+  border-radius: 5px;
+  padding: 16px;
+  border-color: #a8a8ad;
+  font-size: 16px;
+}
+
+body #formBody button:hover {
+  background: white;
+  font-weight: 600;
+}
+
+body #header-nav {
+  background: #FAFAFA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  width: 350px;
+  height: 100%;
+  z-index: 999;
+  position: relative;
+}
+
+body #header-nav #info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 13px;
+  margin-left: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 20px;
+}
+
+body #header-nav #info h2 {
+  padding-top: 20px;
+}
+
+body #header-nav #info #grados {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+body #header-nav #info #grados #HT2 {
+  background: #D62B2B;
+  padding: 2px;
+  width: 28px;
+  height: 28px;
+  border-radius: 20px;
+  color: white;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #header-nav #info #grados #HT1 {
+  background: #E09524;
+  padding: 2px;
+  width: 28px;
+  height: 28px;
+  border-radius: 20px;
+  color: white;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #header-nav #info #grados #elevada {
+  background: #F4DF21;
+  padding: 2px;
+  width: 28px;
+  height: 28px;
+  border-radius: 20px;
+  color: white;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #header-nav #info #grados #normal {
+  background: #2BD63C;
+  padding: 2px;
+  width: 28px;
+  height: 28px;
+  border-radius: 20px;
+  color: white;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #header-nav #info #grados #bataBlanca {
+  background: #2BD6D6;
+  padding: 2px;
+  width: 28px;
+  height: 28px;
+  border-radius: 20px;
+  color: white;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #header-nav #info #grados #nuevo {
+  background: #C4C4C4;
+  padding: 2px;
+  width: 28px;
+  height: 28px;
+  border-radius: 20px;
+  color: white;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #header-nav #info #barraBusqueda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #header-nav #info #barraBusqueda .search {
+  font-size: 20px;
+}
+
+body #header-nav #info #barraBusqueda #search {
+  padding: 5px;
+  border-radius: 15px;
+}
+
+body #header-nav #info #barraBusqueda i {
+  font-size: 17px;
+  color: grey;
+}
+
+body #header-nav #info #barraBusqueda button {
+  background: none;
+  padding-left: 10px;
+}
+
+body #header-nav #pacientesHoy #pacientesAgendados {
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+body #header-nav #pacientesHoy #menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 150px;
+  border-top-width: 3px;
+  border-top-color: #C4C4C4;
+  border-top-style: solid;
+}
+
+body #header-nav #pacientesHoy #menu h2 {
+  padding-left: 20px;
+}
+
+body #header-nav #pacientesHoy #menu li {
+  padding: 10px;
+  border-color: #a8a8ad;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+}
+
+body #header-nav #pacientesHoy #menu li a {
+  width: 100%;
+  height: 100%;
+  color: black;
+  padding-left: 20px;
+}
+
+body #header-nav #pacientesHoy #menu li #redcircle {
+  background: #D62B2B;
+  width: 10px;
+  height: 10px;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+
+body #header-nav #pacientesHoy #menu li #orangecircle {
+  background: #E09524;
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+body #header-nav #pacientesHoy #menu li #yellowcircle {
+  background: #F4DF21;
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+body #header-nav #pacientesHoy #menu li #greencircle {
+  background: #2BD63C;
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+body #header-nav #pacientesHoy #menu li #bluecircle {
+  background: #2BD6D6;
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+body #header-nav #pacientesHoy #menu li #graycircle {
+  background: #C4C4C4;
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+body #header-nav #pacientesHoy #menu li:hover {
+  background: #e7e7ff;
+  font-weight: 700;
+}
+
+body #header-nav #pacientesOtroDia {
+  position: absolute;
+  top: 400px;
+  width: 350px;
+}
+
+body #header-nav #pacientesOtroDia #pacientesNoAgendados {
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+body #header-nav #pacientesOtroDia #menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 150px;
+  border-top-width: 3px;
+  border-top-color: #C4C4C4;
+  border-top-style: solid;
+}
+
+body #header-nav #pacientesOtroDia #menu h2 {
+  padding-left: 20px;
+}
+
+body #header-nav #pacientesOtroDia #menu li {
+  padding: 10px;
+  border-color: #a8a8ad;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+}
+
+body #header-nav #pacientesOtroDia #menu li a {
+  width: 100%;
+  height: 100%;
+  color: black;
+  margin-left: 20px;
+}
+
+body #header-nav #pacientesOtroDia #menu li #redcircle {
+  background: #D62B2B;
+  width: 10px;
+  height: 10px;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+
+body #header-nav #pacientesOtroDia #menu li #orangecircle {
+  background: #E09524;
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+body #header-nav #pacientesOtroDia #menu li #yellowcircle {
+  background: #F4DF21;
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+body #header-nav #pacientesOtroDia #menu li #greencircle {
+  background: #2BD63C;
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+body #header-nav #pacientesOtroDia #menu li #bluecircle {
+  background: #2BD6D6;
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+body #header-nav #pacientesOtroDia #menu li #graycircle {
+  background: #C4C4C4;
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+body #header-nav #pacientesOtroDia #menu li:hover {
+  background: #e7e7ff;
+  font-weight: 700;
+}
+
+body #content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  width: 100%;
+  overflow-y: auto;
+  background: #FAFAFA;
+}
+
+body #content #mediciones {
+  background: white;
+  border-radius: 15px;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 450px;
+}
+
+body #content #mediciones #tabla {
+  width: 700px;
+}
+
+body #content #mediciones #tabla h1 {
+  font-size: 25px;
+  margin: 20px;
+  margin-left: 30px;
+}
+
+body #content #mediciones #tabla #myChart {
+  margin-left: 20px;
+  z-index: -1;
+}
+
+body #content #mediciones #preguntas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 200px;
+  height: 270px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 30px;
+  margin-top: 170px;
+}
+
+body #content #mediciones #preguntas .no {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1.5px;
+  color: gray;
+  font-size: 12px;
+}
+
+body #content #mediciones #preguntas .no i {
+  font-size: 10px;
+}
+
+body #content #mediciones #preguntas .no p {
+  font-size: 7px;
+  color: #C4C4C4;
+}
+
+body #content #mediciones #preguntas .si {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 140px;
+  height: 140px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #2BD63C;
+  border-width: 1.5px;
+  color: #2BD63C;
+  font-size: 16px;
+  padding: 10px;
+}
+
+body #content #mediciones #preguntas .si i {
+  font-size: 40px;
+  padding-bottom: 8px;
+}
+
+body #content #mediciones #preguntas .si p {
+  font-size: 12px;
+  color: #2BD63C;
+}
+
+body #content #mediciones #preguntas #dormir i {
+  font-size: 22px;
+  padding-bottom: 3px;
+}
+
+body #content #mediciones #preguntas #cafe i {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+body #content #mediciones #preguntas #comida i {
+  font-size: 23px;
+  padding-bottom: 10px;
+}
+
+body #content #mediciones #preguntas p {
+  font-size: 12px;
+  color: #C4C4C4;
+}
+
+body #content #mediciones #preguntas .si:hover {
+  width: 150px;
+  height: 150px;
+  border-width: 2px;
+  font-weight: 700;
+}
+
+body #content #infoPacientes {
+  width: 95%;
+  margin: 5px;
+  color: black;
+}
+
+body #content #infoPacientes #pacientes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  position: relative;
+  height: 130px;
+}
+
+body #content #infoPacientes #pacientes #pNuevo {
+  background: #C4C4C4;
+  width: 12px;
+  border-radius: 10px 0 0 10px;
+}
+
+body #content #infoPacientes #pacientes #pNormal {
+  background: #2BD63C;
+  width: 12px;
+  border-radius: 10px 0 0 10px;
+}
+
+body #content #infoPacientes #pacientes #pElevada {
+  background: #E09524;
+  width: 12px;
+  border-radius: 10px 0 0 10px;
+}
+
+body #content #infoPacientes #pacientes #datos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 25px;
+  margin-left: 40px;
+}
+
+body #content #infoPacientes #pacientes #datos h2 {
+  font-size: 20px;
+}
+
+body #content #infoPacientes #pacientes #datos p {
+  font-size: 14px;
+}
+
+body #content #infoPacientes #pacientes #fecha {
+  margin: 10px;
+  position: absolute;
+  right: 30px;
+  top: 18px;
+  font-size: 15px;
+}
+
+body #content #infoPacientes #pacientes #hora {
+  margin: 10px;
+  position: absolute;
+  right: 30px;
+  top: 39px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+body #content #infoPacientes #pacientes:hover {
+  background: #e7e7ff;
+}
+
+body .bienvenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 80%;
+}
+
+body .bienvenido #bienvenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 200px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .bienvenido #bienvenido h1 {
+  font-size: 40px;
+}
+
+body .bienvenido #totalPacientes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .bienvenido #totalPacientes div {
+  border-radius: 200px;
+  width: 150px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+}
+
+body .bienvenido #totalPacientes div .cantidad {
+  font-size: 30px;
+  color: white;
+}
+
+body .bienvenido #totalPacientes div p {
+  font-size: 13px;
+  text-align: center;
+  width: 113px;
+  height: 70px;
+  color: black;
+  font-weight: 700;
+  padding: 2px;
+}
+
+body .bienvenido #totalPacientes #HT2Total {
+  background: #D62B2B;
+}
+
+body .bienvenido #totalPacientes #HT1Total {
+  background: #E09524;
+}
+
+body .bienvenido #totalPacientes #elevadaTotal {
+  background: #F4DF21;
+}
+
+body .bienvenido #totalPacientes #normalTotal {
+  background: #2BD63C;
+}
+
+body .bienvenido #totalPacientes #bataBlancaTotal {
+  background: #2BD6D6;
+}
+
+body .bienvenido #totalPacientes #nuevosTotal {
+  background: #C4C4C4;
+}
+
+body .bienvenido #continuar {
+  background: none;
+  border-style: solid;
+  border-color: black;
+  border-radius: 3px;
+  padding: 16px 32px 16px 32px;
+  font-size: 16px;
+}
+
+body .bienvenido #continuar:hover {
+  background: grey;
+  color: white;
+  font-weight: 700;
+  border: white;
+}
+/*# sourceMappingURL=style.css.map */

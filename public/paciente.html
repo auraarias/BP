@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mediciones Presión Arterial</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://kit.fontawesome.com/92d08a6115.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+
+        <nav id="header-nav">
+
+            <div id="info">
+                <h2>Pacientes</h2>
+                <div id="grados">
+                    <div id="HT2">1</div>
+                    <div id="HT1">1</div>
+                    <div id="elevada">3</div>
+                    <div id="normal">2</div>
+                    <div id="bataBlanca">1</div>
+                    <div id="nuevo">2</div>
+                </div>
+
+                <!-- barra de busqueda -->
+                <form id="busqueda">
+                    <div id="barraBusqueda">
+                        <input type="search" id="search" name="q" placeholder="Buscar Paciente..." size="30">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+
+            </div>
+
+
+
+            <div id="pacientesHoy">
+                <p id="pacientesAgendados">Pacientes agendados para hoy - Sep 02/2019</p>
+
+                <ul id="menu">
+                    <li id="Sebastian">
+                        <a href="">Sebastián Duque</a>
+                        <div id="graycircle"></div>
+                    </li>
+                    <li id="Sandra">
+                        <a href="">Sandra Cardona</a>
+                        <div id="graycircle"></div>
+                    </li>
+                    <li id="Carlos">
+                        <a href="">Camilo Restrepo</a>
+                        <div id="greencircle"></div>
+                    </li>
+                    <li id="Andres">
+                        <a href="">Andrés Arias</a>
+                        <div id="bluecircle"></div>
+                        <div id="orangecircle"></div>
+                    </li>
+                    <li id="Estefania">
+                        <a href="">Estefanía López</a>
+                        <div id="greencircle"></div>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div id="pacientesOtroDia">
+                <p id="pacientesNoAgendados"> Pacientes no agendados </p>
+
+                <ul id="menu" class="menu">
+                    <li id="Juan">
+                        <a href=""> Juan Gómez</a>
+                        <div id="redcircle"></div>
+                    </li>
+                    <li id="Sara">
+                        <a href="">Sara Anaya</a>
+                        <div id="yellowcircle"></div>
+                    </li>
+                    <li id="Camilo">
+                        <a href="">Camilo Hernandez</a>
+                        <div id="greencircle"></div>
+                    </li>
+                    <li id="Roberto">
+                        <a href="">Roberto Mejía</a>
+                        <div id="greencircle"></div>
+                    </li>
+                    <li id="Alicia">
+                        <a href="">Alicia Parra</a>
+                        <div id="bluecircle"></div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="content">
+
+
+
+
+        <!-- info del paciente -->
+        <a id="infoPacientes" href="paciente.html"><div id="pacientes">
+            <div id="pNormal"> </div>
+            <div id="datos">
+                <h2 id="nombre">Camilo Restrepo</h2>
+                <p id="genero"> Masculino</p>
+                <p id="edad"> 23 años</p>
+                <p id="ultimaCita">Agosto 04/2019</p>
+            </div>
+            <h3 id="fecha">Sep 02/2019</h3>
+            <p id="hora">Hora: 14:00 </p>
+        </div></a>
+
+        <!-- tabla con mediciones  -->
+
+        <div id="mediciones">
+
+
+            <div id="tabla">
+                <h1>Mediciones Presión Arterial</h1>
+                <canvas id="myChart"></canvas>
+            </div>
+
+
+            <!-- Actividad -->
+
+            <div id="preguntas">
+
+                <div class="si" id="actividad">
+                    <i class="fas fa-running"></i>
+                    <p>Actividad física</p>
+                </div>
+
+                
+                    <div class="no" id="dormir">
+                        <i class="fas fa-bed"></i>
+                        <p>Pocas horas de sueño</p>
+                    </div>
+                    <div class="no" id="cafe">
+                        <i class="fas fa-mug-hot"></i>
+                        <p>Tomó café</p>
+                    </div>
+                    <div class="no " id="comida">
+                        <i class="fas fa-utensils"></i>
+                        <p>Comió</p>
+                    </div>
+                
+
+                <p>*Actividad realizada en la última hora</p>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="js/main.js"></script>
+
+</html>

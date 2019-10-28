@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/92d08a6115.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav id="header-nav">
+
+            <div id="info">
+                <h2>Pacientes</h2>
+                <div id="grados">
+                    <div id="HT2">1</div>
+                    <div id="HT1">1</div>
+                    <div id="elevada">3</div>
+                    <div id="normal">2</div>
+                    <div id="bataBlanca">1</div>
+                    <div id="nuevo">2</div>
+                </div>
+
+                <!-- barra de busqueda -->
+                <form id="busqueda">
+                    <div id="barraBusqueda">
+                        <input type="search" id="search" name="q" placeholder="Buscar Paciente..." size="30">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+
+            </div>
+
+
+
+            <div id="pacientesHoy">
+                <p id="pacientesAgendados">Pacientes agendados para hoy - Sep 02/2019</p>
+
+                <ul id="menu">
+                    <li id="Sebastian">
+                        <a href="">Sebastián Duque</a>
+                        <div id="graycircle"></div>
+                    </li>
+                    <li id="Sandra">
+                        <a href="">Sandra Cardona</a>
+                        <div id="graycircle"></div>
+                    </li>
+                    <li id="Carlos">
+                        <a href="">Camilo Restrepo</a>
+                        <div id="greencircle"></div>
+                    </li>
+                    <li id="Andres">
+                        <a href="">Andrés Arias</a>
+                        <div id="bluecircle"></div>
+                        <div id="orangecircle"></div>
+                    </li>
+                    <li id="Estefania">
+                        <a href="">Estefanía López</a>
+                        <div id="greencircle"></div>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div id="pacientesOtroDia">
+                <p id="pacientesNoAgendados"> Pacientes no agendados </p>
+
+                <ul id="menu" class="menu">
+                    <li id="Juan">
+                        <a href=""> Juan Gómez</a>
+                        <div id="redcircle"></div>
+                    </li>
+                    <li id="Sara">
+                        <a href="">Sara Anaya</a>
+                        <div id="yellowcircle"></div>
+                    </li>
+                    <li id="Camilo">
+                        <a href="">Camilo Hernandez</a>
+                        <div id="greencircle"></div>
+                    </li>
+                    <li id="Roberto">
+                        <a href="">Roberto Mejía</a>
+                        <div id="greencircle"></div>
+                    </li>
+                    <li id="Alicia">
+                        <a href="">Alicia Parra</a>
+                        <div id="bluecircle"></div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="content">
+        
+        <!-- info del paciente -->
+        <a id="infoPacientes" href=""><div id="pacientes">
+            <div id="pNuevo"> </div>
+            <div id="datos">
+                <h2 id="nombre">Sebastián Duque</h2>
+                <p id="genero"> Masculino</p>
+                <p id="edad"> 40 años</p>
+                <p id="ultimaCita">Junio 24/2019</p>
+            </div>
+            <h3 id="fecha">Sep 02/2019</h3>
+            <p id="hora">Hora: 12:00 </p>
+        </div></a>
+
+        <a id="infoPacientes" href=""><div id="pacientes">
+            <div id="pNuevo"> </div>
+            <div id="datos">
+                <h2 id="nombre">Sandra Cardona</h2>
+                <p id="genero"> Femenino</p>
+                <p id="edad"> 30 años</p>
+                <p id="ultimaCita">Abril 30/2019</p>
+            </div>
+            <h3 id="fecha">Sep 02/2019</h3>
+            <p id="hora">Hora: 13:00 </p>
+        </div></a>
+
+        <a id="infoPacientes" href="paciente.html"><div id="pacientes">
+            <div id="pNormal"> </div>
+            <div id="datos">
+                <h2 id="nombre">Camilo Restrepo</h2>
+                <p id="genero"> Masculino</p>
+                <p id="edad"> 23 años</p>
+                <p id="ultimaCita">Agosto 04/2019</p>
+            </div>
+            <h3 id="fecha">Sep 02/2019</h3>
+            <p id="hora">Hora: 14:00 </p>
+        </div></a>
+
+        <a id="infoPacientes" href=""><div id="pacientes">
+            <div id="pElevada"> </div>
+            <div id="datos">
+                <h2 id="nombre">Andrés Arias</h2>
+                <p id="genero"> Masculino</p>
+                <p id="edad"> 53 años</p>
+                <p id="ultimaCita">Julio 07/2019</p>
+            </div>
+            <h3 id="fecha">Sep 02/2019</h3>
+            <p id="hora">Hora: 15:00 </p>
+        </div></a>
+
+        <a id="infoPacientes" href=""><div id="pacientes">
+            <div id="pNormal"> </div>
+            <div id="datos">
+                <h2 id="nombre">Estefanía López</h2>
+                <p id="genero"> Femenino</p>
+                <p id="edad"> 32 años</p>
+                <p id="ultimaCita">Agosto 10/2019</p>
+            </div>
+            <h3 id="fecha">Sep 02/2019</h3>
+            <p id="hora">Hora: 16:00 </p>
+        </div></a>
+    </div>
+
+</body>
+
+</html>

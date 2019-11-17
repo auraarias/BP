@@ -111,10 +111,7 @@ async function setup() {
             tickMarkLength: 25,
             display: false,
           },
-
-         
-
-
+        
         }, {
 
           type: 'linear',

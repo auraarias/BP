@@ -2,13 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Mediciones Presión Arterial</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleEnfermera.css">
     <script src="https://kit.fontawesome.com/92d08a6115.js"></script>
-    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -17,7 +16,7 @@
         <nav id="header-nav">
 
             <section id="navBar">
-                <a href="index.html"><img id="logo" src="images/logo.png" alt="logo"></a>
+                <a href="homeEnfermera.html"><img id="logo" src="images/logo.png" alt="logo"></a>
             </section>
 
             <div id="info">
@@ -49,24 +48,24 @@
                 <ul id="menu">
 
                     <li id="Carlos">
-                        <a href="paciente.html">Camilo Restrepo</a>
+                        <a href="enfermera.html">Camilo Restrepo</a>
                         <div id="greencircle"></div>
                     </li>
                     <li id="Sebastian">
-                        <a href="pacienteUno.html">Sebastián Duque</a>
+                        <a href="enfermeraUno.html">Sebastián Duque</a>
                         <div id="graycircle"></div>
                     </li>
                     <li id="Sandra">
-                        <a href="pacienteDos.html">Sandra Cardona</a>
+                        <a href="enfermeraDos.html">Sandra Cardona</a>
                         <div id="graycircle"></div>
                     </li>
                     <li id="Andres">
-                        <a href="pacienteTres.html">Andrés Arias</a>
+                        <a href="enfermeraTres.html">Andrés Arias</a>
                         <div id="bluecircle"></div>
                         <div id="orangecircle"></div>
                     </li>
                     <li id="Estefania">
-                        <a href="pacienteCuatro.html">Estefanía López</a>
+                        <a href="enfermeraCuatro.html">Estefanía López</a>
                         <div id="greencircle"></div>
                     </li>
                 </ul>
@@ -105,10 +104,8 @@
     <div id="content">
 
 
-
-
         <!-- info del paciente -->
-        <a id="infoPacientes" href="">
+        <a id="infoPaciente" href="">
             <div id="pacientes">
                 <div id="pNormal"> </div>
                 <div id="datos">
@@ -122,49 +119,89 @@
             </div>
         </a>
 
-        <!-- tabla con mediciones  -->
+        <!-- Contenido -->
 
-        <div id="mediciones">
+        <div id="contentActividad">
 
 
-            <div id="tabla">
-                <h1>Mediciones Presión Arterial</h1>
-                <canvas id="myChartCuatro"></canvas>
+            <!-- eleccion de actividad realizada -->
+
+            <div id="actividadForm">
+                <h1> Registro de actividad del paciente</h1>
+
+                <!-- Actividad -->
+
+                <div id="preguntas">
+
+                    <div class="si" id="actividad">
+                        <i class="fas fa-running"></i>
+                        <p>Actividad física</p>
+                    </div>
+
+
+                    <div class="no" id="dormir">
+                        <i class="fas fa-bed"></i>
+                        <p>Pocas horas de sueño</p>
+                    </div>
+                    <div class="no" id="cafe">
+                        <i class="fas fa-mug-hot"></i>
+                        <p>Tomó café</p>
+                    </div>
+                    <div class="no " id="comida">
+                        <i class="fas fa-utensils"></i>
+                        <p>Comió</p>
+                    </div>
+
+                </div>
+                <a id="enviar" href="inicio.html">Enviar</a>
+
+            </div>
+
+            <!-- Manejo del chaleco -->
+
+
+
+            <div id="actividadMecanismo">
+
+                <form action="/arduino" method="post" id="formArduino">
+
+                    <h1> Estado del OM</h1>
+
+                    <p> Asigna un OM a este paciente</p>
+
+                    <input type="hidden" name="Camilo" id="">
+                    <input type="hidden" name="Masculino" id="">
+                    <input type="hidden" name="23" id="">
+
+                    <select id="chalecos">
+
+                        <option selected> --- </option>
+
+                        <option>OM-01</option>
+
+                        <option>OM-02</option>
+
+                        <option>OM-03</option>
+
+                    </select>
+
+                    <div id="botones">
+
+                        <button id="iniciar" class="iniciarNoSelected"><i class="fas fa-play-circle"></i>Iniciar
+                            OM</button>
+                        <button id="detener" class="detenerNoSelected"><i class="fas fa-stop-circle"></i>Detener
+                            OM</button>
+                        <button id="vibracion" class="vibracionNoSelected"><i class="fas fa-water"></i>OM solo en
+                            vibración</button>
+
+                    </div>
+
+                </form>
             </div>
 
 
-            <!-- Actividad -->
-
-            <div id="preguntas">
-
-                <div class="si" id="actividad">
-                    <i class="fas fa-running"></i>
-                    <p>Actividad física</p>
-                </div>
-
-
-                <div class="no" id="dormir">
-                    <i class="fas fa-bed"></i>
-                    <p>Pocas horas de sueño</p>
-                </div>
-                <div class="no" id="cafe">
-                    <i class="fas fa-mug-hot"></i>
-                    <p>Tomó café</p>
-                </div>
-                <div class="no " id="comida">
-                    <i class="fas fa-utensils"></i>
-                    <p>Comió</p>
-                </div>
-
-
-                <p>*Actividad realizada en la última hora</p>
-
-            </div>
         </div>
 
-    </div>
 </body>
-
-<script src="js/pacienteCuatro.js"></script>
 
 </html>

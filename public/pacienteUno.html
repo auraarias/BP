@@ -16,6 +16,11 @@
 
         <nav id="header-nav">
 
+            <section id="navBar">
+                <a href="index.html"><img id="logo" src="images/logo.png" alt="logo"></a>
+            </section>
+
+
             <div id="info">
                 <h2>Pacientes</h2>
                 <div id="grados">
@@ -43,6 +48,10 @@
                 <p id="pacientesAgendados">Pacientes agendados para hoy - Sep 02/2019</p>
 
                 <ul id="menu">
+                    <li id="Carlos">
+                        <a href="paciente.html">Camilo Restrepo</a>
+                        <div id="greencircle"></div>
+                    </li>
                     <li id="Sebastian">
                         <a href="pacienteUno.html">Sebastián Duque</a>
                         <div id="graycircle"></div>
@@ -50,10 +59,6 @@
                     <li id="Sandra">
                         <a href="pacienteDos.html">Sandra Cardona</a>
                         <div id="graycircle"></div>
-                    </li>
-                    <li id="Carlos">
-                        <a href="paciente.html">Camilo Restrepo</a>
-                        <div id="greencircle"></div>
                     </li>
                     <li id="Andres">
                         <a href="pacienteTres.html">Andrés Arias</a>
@@ -103,17 +108,19 @@
 
 
         <!-- info del paciente -->
-        <a id="infoPacientes" href="paciente.html"><div id="pacientes">
-            <div id="pNuevo"> </div>
-            <div id="datos">
-                <h2 id="nombre">Sebastián Duque</h2>
-                <p id="genero"> Masculino</p>
-                <p id="edad"> 40 años</p>
-                <p id="ultimaCita">Agosto 04/2019</p>
+        <a id="infoPacientes" href="">
+            <div id="pacientes">
+                <div id="pNuevo"> </div>
+                <div id="datos">
+                    <h2 id="nombre">Sebastián Duque</h2>
+                    <p id="genero"> Masculino</p>
+                    <p id="edad"> 40 años</p>
+                    <p id="ultimaCita">Agosto 04/2019</p>
+                </div>
+                <h3 id="fecha">Sep 02/2019</h3>
+                <p id="hora">Hora: 12:00 </p>
             </div>
-            <h3 id="fecha">Sep 02/2019</h3>
-            <p id="hora">Hora: 12:00 </p>
-        </div></a>
+        </a>
 
         <!-- tabla con mediciones  -->
 
@@ -135,20 +142,20 @@
                     <p>Actividad física</p>
                 </div>
 
-                
-                    <div class="no" id="dormir">
-                        <i class="fas fa-bed"></i>
-                        <p>Pocas horas de sueño</p>
-                    </div>
-                    <div class="no" id="cafe">
-                        <i class="fas fa-mug-hot"></i>
-                        <p>Tomó café</p>
-                    </div>
-                    <div class="no " id="comida">
-                        <i class="fas fa-utensils"></i>
-                        <p>Comió</p>
-                    </div>
-                
+
+                <div class="no" id="dormir">
+                    <i class="fas fa-bed"></i>
+                    <p>Pocas horas de sueño</p>
+                </div>
+                <div class="no" id="cafe">
+                    <i class="fas fa-mug-hot"></i>
+                    <p>Tomó café</p>
+                </div>
+                <div class="no " id="comida">
+                    <i class="fas fa-utensils"></i>
+                    <p>Comió</p>
+                </div>
+
 
                 <p>*Actividad realizada en la última hora</p>
 

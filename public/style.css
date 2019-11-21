@@ -132,7 +132,7 @@ body #formBody button:hover {
 }
 
 body #header-nav {
-  background: #FAFAFA;
+  background: #26295f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,6 +147,37 @@ body #header-nav {
   height: 100%;
   z-index: 999;
   position: relative;
+  -webkit-box-shadow: 2px 0 8px -2px #1c1f475e;
+          box-shadow: 2px 0 8px -2px #1c1f475e;
+}
+
+body #header-nav #navBar {
+  width: 355px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background: white;
+  border-radius: 0px 0px 10px 0px;
+  -webkit-box-shadow: 2px 0 8px -2px #1c1f475e;
+          box-shadow: 2px 0 8px -2px #1c1f475e;
+}
+
+body #header-nav #navBar a {
+  height: 90%;
+}
+
+body #header-nav #navBar a #logo {
+  height: 90%;
+  padding-top: 5px;
 }
 
 body #header-nav #info {
@@ -166,7 +197,8 @@ body #header-nav #info {
 }
 
 body #header-nav #info h2 {
-  padding-top: 20px;
+  padding-top: 10px;
+  color: white;
 }
 
 body #header-nav #info #grados {
@@ -175,6 +207,7 @@ body #header-nav #info #grados {
   display: flex;
   padding-top: 10px;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 body #header-nav #info #grados #HT2 {
@@ -183,7 +216,7 @@ body #header-nav #info #grados #HT2 {
   width: 28px;
   height: 28px;
   border-radius: 20px;
-  color: white;
+  color: #26295f;
   margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -202,7 +235,7 @@ body #header-nav #info #grados #HT1 {
   width: 28px;
   height: 28px;
   border-radius: 20px;
-  color: white;
+  color: #26295f;
   margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -221,7 +254,7 @@ body #header-nav #info #grados #elevada {
   width: 28px;
   height: 28px;
   border-radius: 20px;
-  color: white;
+  color: #26295f;
   margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -240,7 +273,7 @@ body #header-nav #info #grados #normal {
   width: 28px;
   height: 28px;
   border-radius: 20px;
-  color: white;
+  color: #26295f;
   margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -259,7 +292,7 @@ body #header-nav #info #grados #bataBlanca {
   width: 28px;
   height: 28px;
   border-radius: 20px;
-  color: white;
+  color: #26295f;
   margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -278,7 +311,7 @@ body #header-nav #info #grados #nuevo {
   width: 28px;
   height: 28px;
   border-radius: 20px;
-  color: white;
+  color: #26295f;
   margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -302,13 +335,13 @@ body #header-nav #info #barraBusqueda .search {
 }
 
 body #header-nav #info #barraBusqueda #search {
-  padding: 5px;
+  padding: 7px;
   border-radius: 15px;
 }
 
 body #header-nav #info #barraBusqueda i {
   font-size: 17px;
-  color: grey;
+  color: white;
 }
 
 body #header-nav #info #barraBusqueda button {
@@ -322,6 +355,7 @@ body #header-nav #pacientesHoy #pacientesAgendados {
   margin-bottom: 15px;
   font-size: 13px;
   font-weight: 600;
+  color: white;
 }
 
 body #header-nav #pacientesHoy #menu {
@@ -336,7 +370,7 @@ body #header-nav #pacientesHoy #menu {
           flex-direction: column;
   height: 150px;
   border-top-width: 3px;
-  border-top-color: #C4C4C4;
+  border-top-color: #ffffff73;
   border-top-style: solid;
 }
 
@@ -346,7 +380,7 @@ body #header-nav #pacientesHoy #menu h2 {
 
 body #header-nav #pacientesHoy #menu li {
   padding: 10px;
-  border-color: #a8a8ad;
+  border-color: #ffffff73;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   display: -webkit-box;
@@ -363,7 +397,7 @@ body #header-nav #pacientesHoy #menu li {
 body #header-nav #pacientesHoy #menu li a {
   width: 100%;
   height: 100%;
-  color: black;
+  color: white;
   padding-left: 20px;
 }
 
@@ -416,7 +450,7 @@ body #header-nav #pacientesHoy #menu li #graycircle {
 }
 
 body #header-nav #pacientesHoy #menu li:hover {
-  background: #e7e7ff;
+  background: #5a6ba9;
   font-weight: 700;
 }
 
@@ -432,6 +466,7 @@ body #header-nav #pacientesOtroDia #pacientesNoAgendados {
   margin-bottom: 15px;
   font-size: 13px;
   font-weight: 600;
+  color: white;
 }
 
 body #header-nav #pacientesOtroDia #menu {
@@ -446,7 +481,7 @@ body #header-nav #pacientesOtroDia #menu {
           flex-direction: column;
   height: 150px;
   border-top-width: 3px;
-  border-top-color: #C4C4C4;
+  border-top-color: #ffffff73;
   border-top-style: solid;
 }
 
@@ -456,7 +491,7 @@ body #header-nav #pacientesOtroDia #menu h2 {
 
 body #header-nav #pacientesOtroDia #menu li {
   padding: 10px;
-  border-color: #a8a8ad;
+  border-color: #ffffff73;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   display: -webkit-box;
@@ -473,7 +508,7 @@ body #header-nav #pacientesOtroDia #menu li {
 body #header-nav #pacientesOtroDia #menu li a {
   width: 100%;
   height: 100%;
-  color: black;
+  color: white;
   margin-left: 20px;
 }
 
@@ -526,7 +561,7 @@ body #header-nav #pacientesOtroDia #menu li #graycircle {
 }
 
 body #header-nav #pacientesOtroDia #menu li:hover {
-  background: #e7e7ff;
+  background: #5a6ba9;
   font-weight: 700;
 }
 
@@ -551,7 +586,7 @@ body #content {
           flex: 1 1 auto;
   width: 100%;
   overflow-y: auto;
-  background: #FAFAFA;
+  background: #8d9edd;
 }
 
 body #content #mediciones {
@@ -569,6 +604,8 @@ body #content #mediciones {
   -ms-flex-line-pack: center;
       align-content: center;
   height: 450px;
+  -webkit-box-shadow: 0px 2px 2px 0px #1c1f474b;
+          box-shadow: 0px 2px 2px 0px #1c1f474b;
 }
 
 body #content #mediciones #tabla {
@@ -577,12 +614,9 @@ body #content #mediciones #tabla {
 
 body #content #mediciones #tabla h1 {
   font-size: 25px;
-  margin: 20px;
-  margin-left: 30px;
 }
 
 body #content #mediciones #tabla #myChart {
-  margin-left: 20px;
   z-index: -1;
 }
 
@@ -593,12 +627,10 @@ body #content #mediciones #preguntas {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 200px;
-  height: 270px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 30px;
-  margin-top: 170px;
+  margin-right: 50px;
 }
 
 body #content #mediciones #preguntas .no {
@@ -615,8 +647,8 @@ body #content #mediciones #preguntas .no {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 65px;
-  height: 65px;
+  width: 80px;
+  height: 80px;
   text-align: center;
   padding: 5px;
   border-radius: 10px;
@@ -625,6 +657,7 @@ body #content #mediciones #preguntas .no {
   border-width: 1.5px;
   color: gray;
   font-size: 12px;
+  margin: 10px;
 }
 
 body #content #mediciones #preguntas .no i {
@@ -632,7 +665,7 @@ body #content #mediciones #preguntas .no i {
 }
 
 body #content #mediciones #preguntas .no p {
-  font-size: 7px;
+  font-size: 10px;
   color: #C4C4C4;
 }
 
@@ -650,27 +683,32 @@ body #content #mediciones #preguntas .si {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 140px;
-  height: 140px;
+  width: 80px;
+  height: 80px;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
   border-style: solid;
-  border-color: #2BD63C;
   border-width: 1.5px;
-  color: #2BD63C;
-  font-size: 16px;
-  padding: 10px;
+  border-color: #2BD63C;
+  color: white;
+  background: #2BD63C;
+  font-size: 12px;
+  margin: 10px;
 }
 
 body #content #mediciones #preguntas .si i {
-  font-size: 40px;
-  padding-bottom: 8px;
+  font-size: 10px;
 }
 
 body #content #mediciones #preguntas .si p {
-  font-size: 12px;
-  color: #2BD63C;
+  font-size: 10px;
+  color: white;
+}
+
+body #content #mediciones #preguntas #actividad i {
+  font-size: 22px;
+  padding-bottom: 3px;
 }
 
 body #content #mediciones #preguntas #dormir i {
@@ -693,17 +731,13 @@ body #content #mediciones #preguntas p {
   color: #C4C4C4;
 }
 
-body #content #mediciones #preguntas .si:hover {
-  width: 150px;
-  height: 150px;
-  border-width: 2px;
-  font-weight: 700;
-}
-
 body #content #infoPacientes {
   width: 95%;
   margin: 5px;
   color: black;
+  -webkit-box-shadow: 0px 2px 2px 0px #1c1f474b;
+          box-shadow: 0px 2px 2px 0px #1c1f474b;
+  border-radius: 10px;
 }
 
 body #content #infoPacientes #pacientes {
@@ -772,137 +806,6 @@ body #content #infoPacientes #pacientes #hora {
 }
 
 body #content #infoPacientes #pacientes:hover {
-  background: #e7e7ff;
-}
-
-body .bienvenido {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 80%;
-}
-
-body .bienvenido #bienvenido {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 200px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-body .bienvenido #bienvenido h1 {
-  font-size: 40px;
-}
-
-body .bienvenido #totalPacientes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body .bienvenido #totalPacientes div {
-  border-radius: 200px;
-  width: 150px;
-  height: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 20px;
-}
-
-body .bienvenido #totalPacientes div .cantidad {
-  font-size: 30px;
-  color: white;
-}
-
-body .bienvenido #totalPacientes div p {
-  font-size: 13px;
-  text-align: center;
-  width: 113px;
-  height: 70px;
-  color: black;
-  font-weight: 700;
-  padding: 2px;
-}
-
-body .bienvenido #totalPacientes #HT2Total {
-  background: #D62B2B;
-}
-
-body .bienvenido #totalPacientes #HT1Total {
-  background: #E09524;
-}
-
-body .bienvenido #totalPacientes #elevadaTotal {
-  background: #F4DF21;
-}
-
-body .bienvenido #totalPacientes #normalTotal {
-  background: #2BD63C;
-}
-
-body .bienvenido #totalPacientes #bataBlancaTotal {
-  background: #2BD6D6;
-}
-
-body .bienvenido #totalPacientes #nuevosTotal {
-  background: #C4C4C4;
-}
-
-body .bienvenido #continuar {
-  background: none;
-  border-style: solid;
-  border-color: black;
-  border-radius: 3px;
-  padding: 16px 32px 16px 32px;
-  font-size: 16px;
-}
-
-body .bienvenido #continuar:hover {
-  background: grey;
-  color: white;
-  font-weight: 700;
-  border: white;
+  background: #cad5fd;
 }
 /*# sourceMappingURL=style.css.map */

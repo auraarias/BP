@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/92d08a6115.js"></script>
+    <link rel="stylesheet" href="styleEnfermera.css">
+</head>
+
+<body>
+
+    <section id="nav-bar">
+        <img id="logo" src="images/logoBlanco.png" alt="logo">
+    </section>
+
+    <div id="content">
+
+        <div id="losPacientes">
+
+            <!-- info del paciente -->
+
+            <a id="infoPacientes" href="enfermera.html">
+                <div id="pacientes">
+                    <div id="pNormal"> </div>
+                    <div id="datos">
+                        <h2 id="nombre">Camilo Restrepo</h2>
+                        <p id="genero"> Masculino</p>
+                        <p id="edad"> 23 años</p>
+                        <p id="ultimaCita">Agosto 04/2019</p>
+                    </div>
+                    <h3 id="fecha">Sep 02/2019</h3>
+                    <p id="hora">Hora: 14:00 </p>
+                </div>
+            </a>
+
+            <a id="infoPacientes" href="enfermeraUno.html">
+                <div id="pacientes">
+                    <div id="pNuevo"> </div>
+                    <div id="datos">
+                        <h2 id="nombre">Sebastián Duque</h2>
+                        <p id="genero"> Masculino</p>
+                        <p id="edad"> 40 años</p>
+                        <p id="ultimaCita">Junio 24/2019</p>
+                    </div>
+                    <h3 id="fecha">Sep 02/2019</h3>
+                    <p id="hora">Hora: 12:00 </p>
+                </div>
+            </a>
+
+            <a id="infoPacientes" href="enfermeraDos.html">
+                <div id="pacientes">
+                    <div id="pNuevo"> </div>
+                    <div id="datos">
+                        <h2 id="nombre">Sandra Cardona</h2>
+                        <p id="genero"> Femenino</p>
+                        <p id="edad"> 30 años</p>
+                        <p id="ultimaCita">Abril 30/2019</p>
+                    </div>
+                    <h3 id="fecha">Sep 02/2019</h3>
+                    <p id="hora">Hora: 13:00 </p>
+                </div>
+            </a>
+
+            <a id="infoPacientes" href="enfermeraTres.html">
+                <div id="pacientes">
+                    <div id="pElevada"> </div>
+                    <div id="datos">
+                        <h2 id="nombre">Andrés Arias</h2>
+                        <p id="genero"> Masculino</p>
+                        <p id="edad"> 53 años</p>
+                        <p id="ultimaCita">Julio 07/2019</p>
+                    </div>
+                    <h3 id="fecha">Sep 02/2019</h3>
+                    <p id="hora">Hora: 15:00 </p>
+                </div>
+            </a>
+
+            <a id="infoPacientes" href="enfermeraCuatro.html">
+                <div id="pacientes">
+                    <div id="pNormal"> </div>
+                    <div id="datos">
+                        <h2 id="nombre">Estefanía López</h2>
+                        <p id="genero"> Femenino</p>
+                        <p id="edad"> 32 años</p>
+                        <p id="ultimaCita">Agosto 10/2019</p>
+                    </div>
+                    <h3 id="fecha">Sep 02/2019</h3>
+                    <p id="hora">Hora: 16:00 </p>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Estados de los OM -->
+
+        <div id="estadosOm">
+
+            <div class="disponible" id="omUno">
+                <h1>Om-01</h1>
+                <p> Disponible </p>
+            </div>
+            <div class="noDisponible" id="omDos">
+                <h1>Om-02</h1>
+                <p> Camilo Restrepo </p>
+                <p>Masculino</p>
+                <p>23 años</p>
+            </div>
+            <div class="vibrando" id="omTres">
+                <h1>Om-03</h1>
+                <p> Solo en vibración</p>
+            </div>
+            <div class="disponible" id="omCuatro">
+                <h1>Om-04</h1>
+                <p> Disponible </p>
+            </div>
+            <div class="disponible" id="omCinco">
+                <h1>Om-05</h1>
+                <p> Disponible </p>
+            </div>
+            <div class="vibrando" id="omSeis">
+                <h1>Om-06</h1>
+                <p> Solo en vibración </p>
+            </div>
+            <div class="disponible" id="omSiete">
+                <h1>Om-07</h1>
+                <p> Disponible </p>
+            </div>
+            <div class="noDisponible" id="omOcho">
+                <h1>Om-08</h1>
+                <p> Sandra Cardona</p>
+                <p> Femenino</p>
+                <p> 30 años</p>
+            </div>
+            <div class="noDisponible" id="omNueve">
+                <h1>Om-09</h1>
+                <p> Sandra Cardona</p>
+                <p> Femenino</p>
+                <p> 30 años</p>
+            </div>
+
+            <!-- clasificación de pacientes -->
+
+            <div id="clasificacion">
+
+                <h1>Clasificación de Pacientes</h1>
+
+                <ul id="listaClasificacion">
+                    <li id="Estefania">
+                        <div id="red"></div>
+                        <h2>Paciente con Hipertensión Grado 2</h2>
+                    </li>
+                    <li id="pacienteHT1">
+                        <div id="orange"></div>
+                        <h2>Paciente con Hipertensión Grado 1</h2>
+                    </li>
+                    <li id="pacienteNormal">
+                        <div id="green"></div>
+                        <h2>Paciente con Presión Arterial Normal</h2>
+                    </li>
+                    <li id="pacienteHTBB">
+                        <div id="blue"></div>
+                        <h2>Paciente con Hipertensión de Bata Blanca</h2>
+                    </li>
+                    <li id="pacienteNuevo">
+                        <div id="gray"></div>
+                        <h2>Paciente Nuevo</h2>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

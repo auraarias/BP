@@ -98,6 +98,9 @@ app.get("/auraarias", (req, res) => {
 
 });
 
+
+
+
 app.post('/cualquierRuta', urlencodedParser, (req, res) => {
 
     // UNO

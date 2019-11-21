@@ -24,6 +24,7 @@ $yellow: #F4DF21;
 $green: #2BD63C;
 $blue: #2BD6D6;
 $gray: #C4C4C4;
+$darkBlue : #26295f;
 
 * {
     box-sizing: border-box;
@@ -35,7 +36,6 @@ $gray: #C4C4C4;
     transition: all 0.15s ease-in-out;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
-
 }
 
 body {
@@ -45,10 +45,33 @@ body {
     width: 100vw;
     overflow: hidden;
 
+    // BARRA
+
+    #nav-bar {
+        display: flex;
+        justify-content: center;
+        z-index: 100;
+        height: 50px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        background: $darkBlue;
+        border-radius: 0px 0px 10px 10px;
+        box-shadow: 0px 2px 2px 0px #1c1f474b;
+
+        #logo {
+            height: 100%;
+            width: 4%;
+            padding-top: 10px;
+            padding-bottom: 8px;
+        }
+
+    }
+
     // MENÚ
 
     #header-nav {
-        background: #FAFAFA;
+        background: $darkBlue;
         display: flex;
         flex-direction: column;
         flex: 0 1 auto;
@@ -56,6 +79,30 @@ body {
         height: 100%;
         z-index: 999;
         position: relative;
+        box-shadow: 2px 0 8px -2px #1c1f475e;
+
+        #navBar {
+
+            width: 355px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            background: white;
+            border-radius: 0px 0px 10px 0px;
+            box-shadow: 2px 0 8px -2px #1c1f475e;
+
+            a {
+
+                height: 90%;
+
+                #logo {
+                    height: 90%;
+                    padding-top: 5px;
+                }
+            }
+        }
 
         #info {
             // background: red;
@@ -66,16 +113,17 @@ body {
             justify-content: space-between;
             margin-left: 20px;
 
-
-
             h2 {
-                padding-top: 20px;
+                padding-top: 10px;
+                color: white;
             }
 
             #grados {
                 display: flex;
                 padding-top: 10px;
                 margin-bottom: 20px;
+                font-weight: 600;
+
 
                 #HT2 {
                     background: $red;
@@ -83,7 +131,7 @@ body {
                     width: 28px;
                     height: 28px;
                     border-radius: 20px;
-                    color: white;
+                    color: $darkBlue;
                     margin-right: 10px;
                     display: flex;
                     align-items: center;
@@ -97,7 +145,7 @@ body {
                     width: 28px;
                     height: 28px;
                     border-radius: 20px;
-                    color: white;
+                    color: $darkBlue;
                     margin-right: 10px;
                     display: flex;
                     align-items: center;
@@ -111,7 +159,8 @@ body {
                     width: 28px;
                     height: 28px;
                     border-radius: 20px;
-                    color: white;
+                    color: $darkBlue;
+                    ;
                     margin-right: 10px;
                     display: flex;
                     align-items: center;
@@ -125,7 +174,7 @@ body {
                     width: 28px;
                     height: 28px;
                     border-radius: 20px;
-                    color: white;
+                    color: $darkBlue;
                     margin-right: 10px;
                     display: flex;
                     align-items: center;
@@ -141,7 +190,7 @@ body {
                     width: 28px;
                     height: 28px;
                     border-radius: 20px;
-                    color: white;
+                    color: $darkBlue;
                     margin-right: 10px;
                     display: flex;
                     align-items: center;
@@ -155,7 +204,7 @@ body {
                     width: 28px;
                     height: 28px;
                     border-radius: 20px;
-                    color: white;
+                    color: $darkBlue;
                     margin-right: 10px;
                     display: flex;
                     align-items: center;
@@ -174,14 +223,14 @@ body {
                 }
 
                 #search {
-                    padding: 5px;
+                    padding: 7px;
                     // background: blue;
                     border-radius: 15px;
                 }
 
                 i {
                     font-size: 17px;
-                    color: grey;
+                    color: white;
                 }
 
                 button {
@@ -202,6 +251,7 @@ body {
                 margin-bottom: 15px;
                 font-size: 13px;
                 font-weight: 600;
+                color: white;
             }
 
             #menu {
@@ -211,7 +261,8 @@ body {
                 flex-direction: column;
                 height: 150px;
                 border-top-width: 3px;
-                border-top-color: $gray;
+                border-top-color: #ffffff73;
+                ;
                 border-top-style: solid;
 
 
@@ -221,7 +272,8 @@ body {
 
                 li {
                     padding: 10px;
-                    border-color: #a8a8ad;
+                    border-color: #ffffff73;
+                    ;
                     border-bottom-style: solid;
                     border-bottom-width: 1px;
                     display: flex;
@@ -232,7 +284,7 @@ body {
                     a {
                         width: 100%;
                         height: 100%;
-                        color: black;
+                        color: white;
                         padding-left: 20px;
                     }
 
@@ -291,7 +343,7 @@ body {
                 }
 
                 li:hover {
-                    background: #e7e7ff;
+                    background: #5a6ba9;
                     font-weight: 700;
                 }
             }
@@ -312,6 +364,7 @@ body {
                 margin-bottom: 15px;
                 font-size: 13px;
                 font-weight: 600;
+                color: white;
             }
 
             #menu {
@@ -321,7 +374,7 @@ body {
                 flex-direction: column;
                 height: 150px;
                 border-top-width: 3px;
-                border-top-color: $gray;
+                border-top-color: #ffffff73;
                 border-top-style: solid;
 
 
@@ -331,7 +384,7 @@ body {
 
                 li {
                     padding: 10px;
-                    border-color: #a8a8ad;
+                    border-color: #ffffff73;
                     border-bottom-style: solid;
                     border-bottom-width: 1px;
                     display: flex;
@@ -343,7 +396,7 @@ body {
                     a {
                         width: 100%;
                         height: 100%;
-                        color: black;
+                        color: white;
                         margin-left: 20px;
                     }
 
@@ -400,32 +453,252 @@ body {
                 }
 
                 li:hover {
-                    background: #e7e7ff;
+                    background: #5a6ba9;
                     font-weight: 700;
                 }
+
+                #redcircle:hover {}
             }
 
         }
     }
 
+
     #content {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: space-evenly;
-        align-items: center;
-        align-content: center;
         flex: 1 1 auto;
         width: 100%;
         overflow-y: auto;
-        background: #FAFAFA;
-
-
+        background: #8d9edd;
         // información del paciente
 
-        #infoPacientes {
+        #losPacientes {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-content: center;
+            align-items: center;
+            width: 50%;
+            height: 50%;
+            margin-top: 208px;
+
+            #infoPacientes {
+                width: 90%;
+                margin: 4px;
+                color: black;
+                box-shadow: 0px 2px 2px 0px #1c1f474b;
+                border-radius: 10px;
+              
+
+                #pacientes {
+                    display: flex;
+                    background: white;
+                    border-radius: 10px;
+                    position: relative;
+                    height: 120px;
+
+                    #pNuevo {
+                        background: $gray;
+                        width: 12px;
+                        border-radius: 10px 0 0 10px;
+                    }
+
+                    #pNormal {
+                        background: #2BD63C;
+                        width: 12px;
+                        border-radius: 10px 0 0 10px;
+                    }
+
+                    #pElevada {
+                        background: $orange;
+                        width: 12px;
+                        border-radius: 10px 0 0 10px;
+                    }
+
+
+
+                    #datos {
+                        display: flex;
+                        flex-direction: column;
+                       margin-top: 13px;
+                        margin-left: 40px;
+                        
+
+                        h2 {
+                            font-size: 20px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+
+                    #fecha {
+                        margin: 10px;
+                        position: absolute;
+                        right: 30px;
+                        top: 18px;
+                        font-size: 15px;
+                    }
+
+                    #hora {
+                        margin: 10px;
+                        position: absolute;
+                        right: 30px;
+                        top: 39px;
+                        font-size: 12px;
+                        font-weight: 500;
+
+                    }
+
+
+                }
+
+
+                #pacientes:hover {
+
+                    background: #e7e7ff;
+
+                }
+            }
+        }
+
+        // estados de los OM
+
+        #estadosOm {
+            width: 45%;
+            height: 90%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin-top: 75px;
+            
+
+            h1 {
+                font-size: 25px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .disponible {
+                background: #2BD6D6;
+                color:$darkBlue;
+                width: 200px;
+                height: 110px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 0px 2px 2px 0px #1c1f474b;
+            }
+
+            .noDisponible {
+                background: #FF9999;
+                color: white;
+                width: 200px;
+                height: 110px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 0px 2px 2px 0px #1c1f474b;
+                p {
+                    font-size: 12px;
+                }
+            }
+
+            .vibrando {
+                background: #A661E2;
+                color: white;
+                width: 200px;
+                height: 110px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 0px 2px 2px 0px #1c1f474b;
+            }
+
+            // clasificacion pacientes
+
+            #clasificacion {
+
+                width: 95%;
+                margin-bottom: 20px;
+
+                h1 {
+                    font-size: 23px;
+                }
+
+                ul {
+
+                    background: white;
+                    border-radius: 10px;
+                    padding: 10px;
+                    box-shadow: 0px 2px 2px 0px #1c1f474b;
+
+                    li {
+                        padding: 10px;
+                        border-color: #a8a8ad;
+                        border-bottom-style: solid;
+                        border-bottom-width: 1px;
+                        display: flex;
+                        align-content: center;
+                        align-items: center;
+                        font-size: 13px;
+
+                        h2 {
+                            font-size: 14px;
+                            color: black;
+                            padding-left: 20px;
+                        }
+
+                        div {
+                            border-radius: 50px;
+                            width: 20px;
+                            height: 20px;
+                        }
+
+                        #gray {
+                            background: $gray;
+                        }
+
+                        #blue {
+                            background: $blue;
+                        }
+
+                        #green {
+                            background: $green;
+                        }
+
+                        #orange {
+                            background: $orange;
+                        }
+
+                        #red {
+                            background: $red;
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+        //info del paciente (largo)
+
+        #infoPaciente {
             width: 95%;
             margin: 5px;
             color: black;
+            margin-top: 50px;
 
             #pacientes {
                 display: flex;
@@ -433,6 +706,9 @@ body {
                 border-radius: 10px;
                 position: relative;
                 height: 130px;
+                box-shadow: 0px 2px 2px 0px #1c1f474b;
+                border-radius: 10px;
+
 
                 #pNuevo {
                     background: $gray;
@@ -490,161 +766,335 @@ body {
 
             }
 
-
-            #pacientes:hover {
-
-                background: #e7e7ff;
-
-            }
-
         }
 
         // Actividad de la ultima hora 
 
-        #actividadForm {
+        #contentActividad {
 
-            background: white;
-            border-radius: 15px;
-            width: 95%;
             display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            align-content: center;
-            height: 450px;
-            position: relative;
-            flex-direction: column;
+            // background: yellow;
+            justify-content: space-around;
+            width: 95%;
 
 
-            h1 {
-                font-size: 25px;
-                margin: 20px;
-                margin-left: 30px;
-                position: absolute;
-                top: 10px;
-                left: 20px;
-            }
-
-
-            #preguntas {
+            #actividadMecanismo {
                 display: flex;
-                justify-content: space-evenly;
                 align-content: center;
                 align-items: center;
-                margin-top: 45px;
+                justify-content: space-evenly;
+                flex-direction: column;
+                background: white;
+                border-radius: 15px;
+                width: 45%;
+                height: 450px;
+                box-shadow: 0px 2px 2px 0px #1c1f474b;
 
-                .no {
 
+                #formArduino {
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
+                    justify-content: space-evenly;
                     align-items: center;
-                    width: 140px;
-                    height: 140px;
-                    text-align: center;
-                    padding: 10px;
+                    align-content: center;
+                    height: 450px;
+
+
+                    h1 {
+                        font-size: 25px;
+                    }
+
+                    #chalecos {
+                        width: 300px;
+                        padding: 10px;
+                        border-radius: 10px;
+                        border-style: solid;
+                        border-color: gray;
+                        border-width: 1.5px;
+                        color: gray;
+
+                    }
+
+                    #botones {
+
+                        display: flex;
+
+
+                        button {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            width: 130px;
+                            height: 130px;
+                            text-align: center;
+                            padding: 5px;
+                            border-radius: 10px;
+                            border-style: solid;
+                            border-width: 1.5px;
+                            color: $darkBlue;
+                            font-size: 15px;
+                            margin: 10px;
+                            border-color: gray;
+                            background: none;
+                            color: $darkBlue;
+
+                            i {
+                                font-size: 30px;
+                                padding-bottom: 8px;
+                                color: $darkBlue;
+                            }
+
+                        }
+
+                        // BOTÓN DE INICIAR
+
+                        .iniciarNoSelected {
+                            background: rgb(187, 255, 193);
+                        }
+
+                        .iniciarNoSelected:hover {
+                            background: $green;
+                            border: none;
+                            color: white;
+
+                            i {
+                                color: white;
+                            }
+                        }
+
+                        .iniciarSelected {
+                            background: $green;
+                            border: none;
+                            color: white;
+
+                            i {
+                                color: white;
+                            }
+                        }
+
+                        // BOTÓN DE DETENER
+
+                        .detenerNoSelected {
+                            background: #FF9999;
+                        }
+
+                        .detenerNoSelected:hover {
+                            background: $red;
+                            border: none;
+                            color: white;
+
+                            i {
+                                color: white;
+                            }
+                        }
+
+                        .detenerSelected {
+                            background: $red;
+                            border: none;
+                            color: white;
+
+                            i {
+                                color: white;
+                            }
+                        }
+
+                        // BOTÓN DE VIBRAR
+
+                        .vibracionNoSelected {
+                            background: #DAB0FF;
+                            font-size: 13px;
+                            padding-top: 19px;
+                        }
+
+                        .vibracionNoSelected:hover {
+                            background: #A661E2;
+                            border: none;
+                            color: white;
+
+                            i {
+                                color: white;
+                            }
+                        }
+
+                        .vibracionSelected {
+                            background: $red;
+                            border: none;
+                            color: white;
+                            padding-top: 19px;
+
+                            i {
+                                color: white;
+                            }
+                        }
+
+
+
+                    }
+                }
+
+            }
+
+            #actividadForm {
+
+                background: white;
+                border-radius: 15px;
+                width: 45%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                height: 450px;
+                align-items: center;
+                align-content: center;
+                box-shadow: 0px 2px 2px 0px #1c1f474b;
+
+
+
+                h1 {
+                    font-size: 25px;
+                }
+
+                #preguntas {
+                    display: flex;
+                    // flex-direction: column;
+                    // background: #2BD63C;
+                    flex-wrap: wrap;
+                    width: 300px;
+                    height: 300px;
+                    justify-content: space-evenly;
+
+                    .no {
+
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 130px;
+                        height: 130px;
+                        text-align: center;
+                        padding: 5px;
+                        border-radius: 10px;
+                        border-style: solid;
+                        border-color: gray;
+                        border-width: 1.5px;
+                        color: gray;
+                        font-size: 12px;
+                        margin: 10px;
+
+                        i {
+                            font-size: 30px;
+                            color: $darkBlue;
+                        }
+
+                        p {
+                            font-size: 15px;
+                            color: $darkBlue;
+                        }
+                    }
+
+                    .si {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 130px;
+                        height: 130px;
+                        text-align: center;
+                        padding: 5px;
+                        border-radius: 10px;
+                        border-style: solid;
+                        border-width: 1.5px;
+                        border-color: $green;
+                        color: white;
+                        background: $green;
+                        font-size: 12px;
+                        margin: 10px;
+
+                        i {
+                            font-size: 30px;
+
+                        }
+
+                        p {
+                            font-size: 15px;
+                            color: white;
+                        }
+                    }
+
+                    #actividad {
+
+                        i {
+                            font-size: 30px;
+                            padding-bottom: 3px;
+                        }
+
+                        cursor: pointer;
+                    }
+
+                    #dormir {
+
+                        i {
+                            font-size: 22px;
+                            padding-bottom: 3px;
+                        }
+
+                        cursor: pointer;
+                    }
+
+                    #cafe {
+
+
+                        i {
+                            font-size: 25px;
+                            padding-bottom: 10px;
+                        }
+
+                        cursor: pointer;
+                    }
+
+                    #comida {
+
+
+                        i {
+                            font-size: 23px;
+                            padding-bottom: 10px;
+                        }
+
+                        cursor: pointer;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        color: $gray;
+                    }
+                }
+
+
+                #enviar {
+                    background: none;
                     border-radius: 10px;
                     border-style: solid;
                     border-color: gray;
                     border-width: 1.5px;
-                    color: gray;
+                    cursor: pointer;
+                    padding: 5px 25px 5px 25px;
                     font-size: 16px;
-                    padding: 10px;
-                    margin: 30px;
-
-                    i {
-                        font-size: 40px;
-                        padding-bottom: 8px;
-                    }
-
-                    p {
-                        font-size: 16px;
-                        color: gray;
-                    }
+                    color: black;
+                    width: 100px;
+                    height: 40px;
                 }
 
-                .si {
+                #enviar:hover {
+                    background: grey;
+                    color: white;
+                    font-weight: 700;
+                    border: white;
 
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    width: 140px;
-                    height: 140px;
-                    text-align: center;
-                    padding: 10px;
-                    border-radius: 10px;
-                    border-style: solid;
-                    border-color: $green;
-                    border-width: 1.5px;
-                    color: $green;
-                    font-size: 16px;
-                    padding: 10px;
-                    margin: 30px;
-
-                    i {
-                        font-size: 40px;
-                        padding-bottom: 8px;
-                    }
-
-                    p {
-                        font-size: 16px;
-                        color: $green;
-                    }
                 }
 
-                #dormir {
-
-                    i {
-                        font-size: 22px;
-                        padding-bottom: 3px;
-                    }
-                }
-
-                #cafe {
-
-
-                    i {
-                        font-size: 25px;
-                        padding-bottom: 10px;
-                    }
-                }
-
-                #comida {
-
-
-                    i {
-                        font-size: 23px;
-                        padding-bottom: 10px;
-                    }
-                }
-
-                p {
-                    font-size: 12px;
-                    color: $gray;
-                }
-            }
-
-            #enviar {
-                background: none;
-                border-style: solid;
-                border-color: black;
-                border-radius: 3px;
-                padding: 16px 30px;
-                font-size: 16px;
-                color: black;
-            }
-
-            #enviar:hover {
-                background: grey;
-                color: white;
-                font-weight: 700;
-                border: white;
 
             }
-
 
         }
     }
-
-
 }

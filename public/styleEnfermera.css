@@ -40,8 +40,33 @@ body {
   overflow: hidden;
 }
 
+body #nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 100;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: #26295f;
+  border-radius: 0px 0px 10px 10px;
+  -webkit-box-shadow: 0px 2px 2px 0px #1c1f474b;
+          box-shadow: 0px 2px 2px 0px #1c1f474b;
+}
+
+body #nav-bar #logo {
+  height: 100%;
+  width: 4%;
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+
 body #header-nav {
-  background: #FAFAFA;
+  background: #26295f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,6 +81,37 @@ body #header-nav {
   height: 100%;
   z-index: 999;
   position: relative;
+  -webkit-box-shadow: 2px 0 8px -2px #1c1f475e;
+          box-shadow: 2px 0 8px -2px #1c1f475e;
+}
+
+body #header-nav #navBar {
+  width: 355px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background: white;
+  border-radius: 0px 0px 10px 0px;
+  -webkit-box-shadow: 2px 0 8px -2px #1c1f475e;
+          box-shadow: 2px 0 8px -2px #1c1f475e;
+}
+
+body #header-nav #navBar a {
+  height: 90%;
+}
+
+body #header-nav #navBar a #logo {
+  height: 90%;
+  padding-top: 5px;
 }
 
 body #header-nav #info {
@@ -75,7 +131,8 @@ body #header-nav #info {
 }
 
 body #header-nav #info h2 {
-  padding-top: 20px;
+  padding-top: 10px;
+  color: white;
 }
 
 body #header-nav #info #grados {
@@ -84,6 +141,7 @@ body #header-nav #info #grados {
   display: flex;
   padding-top: 10px;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 body #header-nav #info #grados #HT2 {
@@ -92,7 +150,7 @@ body #header-nav #info #grados #HT2 {
   width: 28px;
   height: 28px;
   border-radius: 20px;
-  color: white;
+  color: #26295f;
   margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,7 +169,7 @@ body #header-nav #info #grados #HT1 {
   width: 28px;
   height: 28px;
   border-radius: 20px;
-  color: white;
+  color: #26295f;
   margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,7 +188,7 @@ body #header-nav #info #grados #elevada {
   width: 28px;
   height: 28px;
   border-radius: 20px;
-  color: white;
+  color: #26295f;
   margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,7 +207,7 @@ body #header-nav #info #grados #normal {
   width: 28px;
   height: 28px;
   border-radius: 20px;
-  color: white;
+  color: #26295f;
   margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -168,7 +226,7 @@ body #header-nav #info #grados #bataBlanca {
   width: 28px;
   height: 28px;
   border-radius: 20px;
-  color: white;
+  color: #26295f;
   margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,7 +245,7 @@ body #header-nav #info #grados #nuevo {
   width: 28px;
   height: 28px;
   border-radius: 20px;
-  color: white;
+  color: #26295f;
   margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -211,13 +269,13 @@ body #header-nav #info #barraBusqueda .search {
 }
 
 body #header-nav #info #barraBusqueda #search {
-  padding: 5px;
+  padding: 7px;
   border-radius: 15px;
 }
 
 body #header-nav #info #barraBusqueda i {
   font-size: 17px;
-  color: grey;
+  color: white;
 }
 
 body #header-nav #info #barraBusqueda button {
@@ -231,6 +289,7 @@ body #header-nav #pacientesHoy #pacientesAgendados {
   margin-bottom: 15px;
   font-size: 13px;
   font-weight: 600;
+  color: white;
 }
 
 body #header-nav #pacientesHoy #menu {
@@ -245,7 +304,7 @@ body #header-nav #pacientesHoy #menu {
           flex-direction: column;
   height: 150px;
   border-top-width: 3px;
-  border-top-color: #C4C4C4;
+  border-top-color: #ffffff73;
   border-top-style: solid;
 }
 
@@ -255,7 +314,7 @@ body #header-nav #pacientesHoy #menu h2 {
 
 body #header-nav #pacientesHoy #menu li {
   padding: 10px;
-  border-color: #a8a8ad;
+  border-color: #ffffff73;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   display: -webkit-box;
@@ -272,7 +331,7 @@ body #header-nav #pacientesHoy #menu li {
 body #header-nav #pacientesHoy #menu li a {
   width: 100%;
   height: 100%;
-  color: black;
+  color: white;
   padding-left: 20px;
 }
 
@@ -325,7 +384,7 @@ body #header-nav #pacientesHoy #menu li #graycircle {
 }
 
 body #header-nav #pacientesHoy #menu li:hover {
-  background: #e7e7ff;
+  background: #5a6ba9;
   font-weight: 700;
 }
 
@@ -341,6 +400,7 @@ body #header-nav #pacientesOtroDia #pacientesNoAgendados {
   margin-bottom: 15px;
   font-size: 13px;
   font-weight: 600;
+  color: white;
 }
 
 body #header-nav #pacientesOtroDia #menu {
@@ -355,7 +415,7 @@ body #header-nav #pacientesOtroDia #menu {
           flex-direction: column;
   height: 150px;
   border-top-width: 3px;
-  border-top-color: #C4C4C4;
+  border-top-color: #ffffff73;
   border-top-style: solid;
 }
 
@@ -365,7 +425,7 @@ body #header-nav #pacientesOtroDia #menu h2 {
 
 body #header-nav #pacientesOtroDia #menu li {
   padding: 10px;
-  border-color: #a8a8ad;
+  border-color: #ffffff73;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   display: -webkit-box;
@@ -382,7 +442,7 @@ body #header-nav #pacientesOtroDia #menu li {
 body #header-nav #pacientesOtroDia #menu li a {
   width: 100%;
   height: 100%;
-  color: black;
+  color: white;
   margin-left: 20px;
 }
 
@@ -435,11 +495,28 @@ body #header-nav #pacientesOtroDia #menu li #graycircle {
 }
 
 body #header-nav #pacientesOtroDia #menu li:hover {
-  background: #e7e7ff;
+  background: #5a6ba9;
   font-weight: 700;
 }
 
 body #content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  width: 100%;
+  overflow-y: auto;
+  background: #8d9edd;
+}
+
+body #content #losPacientes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -450,26 +527,256 @@ body #content {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  width: 100%;
-  overflow-y: auto;
-  background: #FAFAFA;
+  width: 50%;
+  height: 50%;
+  margin-top: 208px;
 }
 
-body #content #infoPacientes {
+body #content #losPacientes #infoPacientes {
+  width: 90%;
+  margin: 4px;
+  color: black;
+  -webkit-box-shadow: 0px 2px 2px 0px #1c1f474b;
+          box-shadow: 0px 2px 2px 0px #1c1f474b;
+  border-radius: 10px;
+}
+
+body #content #losPacientes #infoPacientes #pacientes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  position: relative;
+  height: 120px;
+}
+
+body #content #losPacientes #infoPacientes #pacientes #pNuevo {
+  background: #C4C4C4;
+  width: 12px;
+  border-radius: 10px 0 0 10px;
+}
+
+body #content #losPacientes #infoPacientes #pacientes #pNormal {
+  background: #2BD63C;
+  width: 12px;
+  border-radius: 10px 0 0 10px;
+}
+
+body #content #losPacientes #infoPacientes #pacientes #pElevada {
+  background: #E09524;
+  width: 12px;
+  border-radius: 10px 0 0 10px;
+}
+
+body #content #losPacientes #infoPacientes #pacientes #datos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 13px;
+  margin-left: 40px;
+}
+
+body #content #losPacientes #infoPacientes #pacientes #datos h2 {
+  font-size: 20px;
+}
+
+body #content #losPacientes #infoPacientes #pacientes #datos p {
+  font-size: 14px;
+}
+
+body #content #losPacientes #infoPacientes #pacientes #fecha {
+  margin: 10px;
+  position: absolute;
+  right: 30px;
+  top: 18px;
+  font-size: 15px;
+}
+
+body #content #losPacientes #infoPacientes #pacientes #hora {
+  margin: 10px;
+  position: absolute;
+  right: 30px;
+  top: 39px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+body #content #losPacientes #infoPacientes #pacientes:hover {
+  background: #e7e7ff;
+}
+
+body #content #estadosOm {
+  width: 45%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 75px;
+}
+
+body #content #estadosOm h1 {
+  font-size: 25px;
+}
+
+body #content #estadosOm p {
+  font-size: 14px;
+}
+
+body #content #estadosOm .disponible {
+  background: #2BD6D6;
+  color: #26295f;
+  width: 200px;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 2px 0px #1c1f474b;
+          box-shadow: 0px 2px 2px 0px #1c1f474b;
+}
+
+body #content #estadosOm .noDisponible {
+  background: #FF9999;
+  color: white;
+  width: 200px;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 2px 0px #1c1f474b;
+          box-shadow: 0px 2px 2px 0px #1c1f474b;
+}
+
+body #content #estadosOm .noDisponible p {
+  font-size: 12px;
+}
+
+body #content #estadosOm .vibrando {
+  background: #A661E2;
+  color: white;
+  width: 200px;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 2px 0px #1c1f474b;
+          box-shadow: 0px 2px 2px 0px #1c1f474b;
+}
+
+body #content #estadosOm #clasificacion {
+  width: 95%;
+  margin-bottom: 20px;
+}
+
+body #content #estadosOm #clasificacion h1 {
+  font-size: 23px;
+}
+
+body #content #estadosOm #clasificacion ul {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 2px 2px 0px #1c1f474b;
+          box-shadow: 0px 2px 2px 0px #1c1f474b;
+}
+
+body #content #estadosOm #clasificacion ul li {
+  padding: 10px;
+  border-color: #a8a8ad;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+}
+
+body #content #estadosOm #clasificacion ul li h2 {
+  font-size: 14px;
+  color: black;
+  padding-left: 20px;
+}
+
+body #content #estadosOm #clasificacion ul li div {
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+}
+
+body #content #estadosOm #clasificacion ul li #gray {
+  background: #C4C4C4;
+}
+
+body #content #estadosOm #clasificacion ul li #blue {
+  background: #2BD6D6;
+}
+
+body #content #estadosOm #clasificacion ul li #green {
+  background: #2BD63C;
+}
+
+body #content #estadosOm #clasificacion ul li #orange {
+  background: #E09524;
+}
+
+body #content #estadosOm #clasificacion ul li #red {
+  background: #D62B2B;
+}
+
+body #content #infoPaciente {
   width: 95%;
   margin: 5px;
   color: black;
+  margin-top: 50px;
 }
 
-body #content #infoPacientes #pacientes {
+body #content #infoPaciente #pacientes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -477,27 +784,30 @@ body #content #infoPacientes #pacientes {
   border-radius: 10px;
   position: relative;
   height: 130px;
+  -webkit-box-shadow: 0px 2px 2px 0px #1c1f474b;
+          box-shadow: 0px 2px 2px 0px #1c1f474b;
+  border-radius: 10px;
 }
 
-body #content #infoPacientes #pacientes #pNuevo {
+body #content #infoPaciente #pacientes #pNuevo {
   background: #C4C4C4;
   width: 12px;
   border-radius: 10px 0 0 10px;
 }
 
-body #content #infoPacientes #pacientes #pNormal {
+body #content #infoPaciente #pacientes #pNormal {
   background: #2BD63C;
   width: 12px;
   border-radius: 10px 0 0 10px;
 }
 
-body #content #infoPacientes #pacientes #pElevada {
+body #content #infoPaciente #pacientes #pElevada {
   background: #E09524;
   width: 12px;
   border-radius: 10px 0 0 10px;
 }
 
-body #content #infoPacientes #pacientes #datos {
+body #content #infoPaciente #pacientes #datos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -509,15 +819,15 @@ body #content #infoPacientes #pacientes #datos {
   margin-left: 40px;
 }
 
-body #content #infoPacientes #pacientes #datos h2 {
+body #content #infoPaciente #pacientes #datos h2 {
   font-size: 20px;
 }
 
-body #content #infoPacientes #pacientes #datos p {
+body #content #infoPaciente #pacientes #datos p {
   font-size: 14px;
 }
 
-body #content #infoPacientes #pacientes #fecha {
+body #content #infoPaciente #pacientes #fecha {
   margin: 10px;
   position: absolute;
   right: 30px;
@@ -525,7 +835,7 @@ body #content #infoPacientes #pacientes #fecha {
   font-size: 15px;
 }
 
-body #content #infoPacientes #pacientes #hora {
+body #content #infoPaciente #pacientes #hora {
   margin: 10px;
   position: absolute;
   right: 30px;
@@ -534,17 +844,47 @@ body #content #infoPacientes #pacientes #hora {
   font-weight: 500;
 }
 
-body #content #infoPacientes #pacientes:hover {
-  background: #e7e7ff;
-}
-
-body #content #actividadForm {
-  background: white;
-  border-radius: 15px;
-  width: 95%;
+body #content #contentActividad {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 95%;
+}
+
+body #content #contentActividad #actividadMecanismo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: white;
+  border-radius: 15px;
+  width: 45%;
+  height: 450px;
+  -webkit-box-shadow: 0px 2px 2px 0px #1c1f474b;
+          box-shadow: 0px 2px 2px 0px #1c1f474b;
+}
+
+body #content #contentActividad #actividadMecanismo #formArduino {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -554,76 +894,29 @@ body #content #actividadForm {
   -ms-flex-line-pack: center;
       align-content: center;
   height: 450px;
-  position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
-body #content #actividadForm h1 {
+body #content #contentActividad #actividadMecanismo #formArduino h1 {
   font-size: 25px;
-  margin: 20px;
-  margin-left: 30px;
-  position: absolute;
-  top: 10px;
-  left: 20px;
 }
 
-body #content #actividadForm #preguntas {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 45px;
-}
-
-body #content #actividadForm #preguntas .no {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 140px;
-  height: 140px;
-  text-align: center;
+body #content #contentActividad #actividadMecanismo #formArduino #chalecos {
+  width: 300px;
   padding: 10px;
   border-radius: 10px;
   border-style: solid;
   border-color: gray;
   border-width: 1.5px;
   color: gray;
-  font-size: 16px;
-  padding: 10px;
-  margin: 30px;
 }
 
-body #content #actividadForm #preguntas .no i {
-  font-size: 40px;
-  padding-bottom: 8px;
+body #content #contentActividad #actividadMecanismo #formArduino #botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-body #content #actividadForm #preguntas .no p {
-  font-size: 16px;
-  color: gray;
-}
-
-body #content #actividadForm #preguntas .si {
+body #content #contentActividad #actividadMecanismo #formArduino #botones button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -637,61 +930,273 @@ body #content #actividadForm #preguntas .si {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 140px;
-  height: 140px;
+  width: 130px;
+  height: 130px;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
   border-style: solid;
-  border-color: #2BD63C;
   border-width: 1.5px;
-  color: #2BD63C;
-  font-size: 16px;
-  padding: 10px;
-  margin: 30px;
+  color: #26295f;
+  font-size: 15px;
+  margin: 10px;
+  border-color: gray;
+  background: none;
+  color: #26295f;
 }
 
-body #content #actividadForm #preguntas .si i {
-  font-size: 40px;
+body #content #contentActividad #actividadMecanismo #formArduino #botones button i {
+  font-size: 30px;
   padding-bottom: 8px;
+  color: #26295f;
 }
 
-body #content #actividadForm #preguntas .si p {
-  font-size: 16px;
-  color: #2BD63C;
+body #content #contentActividad #actividadMecanismo #formArduino #botones .iniciarNoSelected {
+  background: #bbffc1;
 }
 
-body #content #actividadForm #preguntas #dormir i {
+body #content #contentActividad #actividadMecanismo #formArduino #botones .iniciarNoSelected:hover {
+  background: #2BD63C;
+  border: none;
+  color: white;
+}
+
+body #content #contentActividad #actividadMecanismo #formArduino #botones .iniciarNoSelected:hover i {
+  color: white;
+}
+
+body #content #contentActividad #actividadMecanismo #formArduino #botones .iniciarSelected {
+  background: #2BD63C;
+  border: none;
+  color: white;
+}
+
+body #content #contentActividad #actividadMecanismo #formArduino #botones .iniciarSelected i {
+  color: white;
+}
+
+body #content #contentActividad #actividadMecanismo #formArduino #botones .detenerNoSelected {
+  background: #FF9999;
+}
+
+body #content #contentActividad #actividadMecanismo #formArduino #botones .detenerNoSelected:hover {
+  background: #D62B2B;
+  border: none;
+  color: white;
+}
+
+body #content #contentActividad #actividadMecanismo #formArduino #botones .detenerNoSelected:hover i {
+  color: white;
+}
+
+body #content #contentActividad #actividadMecanismo #formArduino #botones .detenerSelected {
+  background: #D62B2B;
+  border: none;
+  color: white;
+}
+
+body #content #contentActividad #actividadMecanismo #formArduino #botones .detenerSelected i {
+  color: white;
+}
+
+body #content #contentActividad #actividadMecanismo #formArduino #botones .vibracionNoSelected {
+  background: #DAB0FF;
+  font-size: 13px;
+  padding-top: 19px;
+}
+
+body #content #contentActividad #actividadMecanismo #formArduino #botones .vibracionNoSelected:hover {
+  background: #A661E2;
+  border: none;
+  color: white;
+}
+
+body #content #contentActividad #actividadMecanismo #formArduino #botones .vibracionNoSelected:hover i {
+  color: white;
+}
+
+body #content #contentActividad #actividadMecanismo #formArduino #botones .vibracionSelected {
+  background: #D62B2B;
+  border: none;
+  color: white;
+  padding-top: 19px;
+}
+
+body #content #contentActividad #actividadMecanismo #formArduino #botones .vibracionSelected i {
+  color: white;
+}
+
+body #content #contentActividad #actividadForm {
+  background: white;
+  border-radius: 15px;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 450px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-shadow: 0px 2px 2px 0px #1c1f474b;
+          box-shadow: 0px 2px 2px 0px #1c1f474b;
+}
+
+body #content #contentActividad #actividadForm h1 {
+  font-size: 25px;
+}
+
+body #content #contentActividad #actividadForm #preguntas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 300px;
+  height: 300px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body #content #contentActividad #actividadForm #preguntas .no {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 130px;
+  height: 130px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1.5px;
+  color: gray;
+  font-size: 12px;
+  margin: 10px;
+}
+
+body #content #contentActividad #actividadForm #preguntas .no i {
+  font-size: 30px;
+  color: #26295f;
+}
+
+body #content #contentActividad #actividadForm #preguntas .no p {
+  font-size: 15px;
+  color: #26295f;
+}
+
+body #content #contentActividad #actividadForm #preguntas .si {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 130px;
+  height: 130px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #2BD63C;
+  color: white;
+  background: #2BD63C;
+  font-size: 12px;
+  margin: 10px;
+}
+
+body #content #contentActividad #actividadForm #preguntas .si i {
+  font-size: 30px;
+}
+
+body #content #contentActividad #actividadForm #preguntas .si p {
+  font-size: 15px;
+  color: white;
+}
+
+body #content #contentActividad #actividadForm #preguntas #actividad {
+  cursor: pointer;
+}
+
+body #content #contentActividad #actividadForm #preguntas #actividad i {
+  font-size: 30px;
+  padding-bottom: 3px;
+}
+
+body #content #contentActividad #actividadForm #preguntas #dormir {
+  cursor: pointer;
+}
+
+body #content #contentActividad #actividadForm #preguntas #dormir i {
   font-size: 22px;
   padding-bottom: 3px;
 }
 
-body #content #actividadForm #preguntas #cafe i {
+body #content #contentActividad #actividadForm #preguntas #cafe {
+  cursor: pointer;
+}
+
+body #content #contentActividad #actividadForm #preguntas #cafe i {
   font-size: 25px;
   padding-bottom: 10px;
 }
 
-body #content #actividadForm #preguntas #comida i {
+body #content #contentActividad #actividadForm #preguntas #comida {
+  cursor: pointer;
+}
+
+body #content #contentActividad #actividadForm #preguntas #comida i {
   font-size: 23px;
   padding-bottom: 10px;
 }
 
-body #content #actividadForm #preguntas p {
+body #content #contentActividad #actividadForm #preguntas p {
   font-size: 12px;
   color: #C4C4C4;
 }
 
-body #content #actividadForm #enviar {
+body #content #contentActividad #actividadForm #enviar {
   background: none;
+  border-radius: 10px;
   border-style: solid;
-  border-color: black;
-  border-radius: 3px;
-  padding: 16px 30px;
+  border-color: gray;
+  border-width: 1.5px;
+  cursor: pointer;
+  padding: 5px 25px 5px 25px;
   font-size: 16px;
   color: black;
+  width: 100px;
+  height: 40px;
 }
 
-body #content #actividadForm #enviar:hover {
+body #content #contentActividad #actividadForm #enviar:hover {
   background: grey;
   color: white;
   font-weight: 700;

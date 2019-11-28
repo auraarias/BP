@@ -808,4 +808,30 @@ body #content #infoPacientes #pacientes #hora {
 body #content #infoPacientes #pacientes:hover {
   background: #cad5fd;
 }
+
+body #login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #login #quienSoy {
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1.5px;
+  color: gray;
+}
+
+body #login input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1.5px;
+  color: gray;
+}
 /*# sourceMappingURL=style.css.map */

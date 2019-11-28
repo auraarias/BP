@@ -163,7 +163,7 @@
 
             <div id="actividadMecanismo">
 
-                <form action="/arduino" method="post" id="formArduino">
+                <form action="/arduinoUno" method="GET" id="formArduino">
 
                     <h1> Estado del OM</h1>
 
@@ -187,12 +187,9 @@
 
                     <div id="botones">
 
-                        <button id="iniciar" class="iniciarNoSelected"><i class="fas fa-play-circle"></i>Iniciar
-                            OM</button>
-                        <button id="detener" class="detenerNoSelected"><i class="fas fa-stop-circle"></i>Detener
-                            OM</button>
-                        <button id="vibracion" class="vibracionNoSelected"><i class="fas fa-water"></i>OM solo en
-                            vibración</button>
+                        <button id="iniciar" class="iniciarNoSelected"><i class="fas fa-play-circle"></i>Iniciar OM</button>
+                        <button id="detener" class="detenerNoSelected" formaction="/arduinoCero"><i class="fas fa-stop-circle"></i>Detener OM</button>
+                        <button id="vibracion" class="vibracionNoSelected"><i class="fas fa-water"></i>OM solo en vibración</button>
 
                     </div>
 

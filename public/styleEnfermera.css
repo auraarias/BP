@@ -626,7 +626,7 @@ body #content #estadosOm {
           justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 75px;
+  margin-top: 70px;
 }
 
 body #content #estadosOm h1 {
@@ -704,9 +704,62 @@ body #content #estadosOm .vibrando {
           box-shadow: 0px 2px 2px 0px #1c1f474b;
 }
 
+body #content #estadosOm .urgente {
+  background: #D62B2B;
+  color: white;
+  width: 200px;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 2px 0px #1c1f474b;
+          box-shadow: 0px 2px 2px 0px #1c1f474b;
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes parpadeo {
+  0% {
+    opacity: 2.0;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 2.0;
+  }
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 2.0;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 2.0;
+  }
+}
+
 body #content #estadosOm #clasificacion {
   width: 95%;
-  margin-bottom: 20px;
+  margin-bottom: 3px;
 }
 
 body #content #estadosOm #clasificacion h1 {

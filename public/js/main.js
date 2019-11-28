@@ -50,7 +50,7 @@ async function setup() {
           pointBorderWidth: 5,
           pointHoverRadius: 10,
           fill: false,
-          borderColor:'#D62B87',
+          borderColor: '#D62B87',
           backgroundColor: '#D62B87',
           borderWidth: 3
 
@@ -105,13 +105,13 @@ async function setup() {
             fontSize: 15,
             fontStyle: 'Bold',
             fontColor: '#000000'
-        },
+          },
 
           gridLines: {
             tickMarkLength: 25,
             display: false,
           },
-        
+
         }, {
 
           type: 'linear',
@@ -144,9 +144,9 @@ async function setup() {
             fontSize: 15,
             fontColor: '#D62B87',
             fontStyle: 'Bold',
-        },
+          },
 
-        
+
 
         }],
       }
@@ -174,3 +174,19 @@ async function getData() {
 }
 
 getData();
+
+function Login() {
+  var done = 0;
+  var usuario = document.login.usuario.value;
+  var password = document.login.password.value;
+  if (usuario == "1234567890" && password == "1234") {
+    window.location = "index.html";
+  }
+  if (usuario == "1987654321" && password == "1234") {
+    window.location = "homeEnfermera.html";
+  }
+}
+
+document.oncontextmenu = function () {
+  return false
+}

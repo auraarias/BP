@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/92d08a6115.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="login">
+        <h1>Ingresa Tus Datos
+        </h1>
+        <form name="login">
+            <select id="quienSoy">
+
+                <option selected> --- </option>
+
+                <option>Doctor</option>
+
+                <option>Enfermera</option>
+
+            </select>
+            <table>
+                <tr>
+                    <th scope="row">
+                        <h2>Usuario</h2>
+                    </th>
+                    <td><span class="cnt">
+                            <input name="usuario" type="text" class="Input" value="" size="20" />
+                        </span></td>
+                </tr>
+                <tr>
+                    <th height="33" scope="row">
+                        <h2>Clave</h2>
+                    </th>
+                    <td><span class="cnt">
+                            <input name="password" type="password" class="Input" value="" size="20" />
+                        </span></td>
+                    <td><span class="cnt">
+                            <input value="Entrar" target="_parent" onclick="Login()" type="button" class="boton" />
+                        </span></td>
+                </tr>
+                <tr>
+                    <th scope="row"><input type="reset" name="Borrar" id="Borrar" value="Reset" class="boton" /></th>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+<script src="js/main.js"></script>
+
+</html>

@@ -7,6 +7,8 @@ let urlencodedParser = bodyParser.urlencoded({
     extended: false
 })
 
+
+
 let name = "";
 let lastName = "";
 
@@ -45,7 +47,8 @@ let sisCinco = "";
 let diasCinco = "";
 let bpmCinco = "";
 
-let arduino = false;
+let arduino = 0;
+
 app.use(cors());
 
 app.listen(5500, () => console.log('listening at 5500'));
@@ -98,7 +101,25 @@ app.get("/auraarias", (req, res) => {
 
 });
 
+app.get("/arduino", (req,res)=>{
+    res.send(arduino + "");
+    console.log("request");
 
+});
+
+app.get('/arduinoUno', (req,res)=>{
+    arduino = 1;
+    res.send(arduino + "");
+    console.log("Uno");
+});
+
+app.get('/arduinoCero', (req,res)=>{
+    arduino = 0;
+    res.send(arduino + "");
+    console.log("Cero");
+
+
+});
 
 
 app.post('/cualquierRuta', urlencodedParser, (req, res) => {

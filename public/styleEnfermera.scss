@@ -573,7 +573,7 @@ body {
             display: flex;
             justify-content: space-evenly;
             flex-wrap: wrap;
-            margin-top: 75px;
+            margin-top: 70px;
             
 
             h1 {
@@ -626,12 +626,54 @@ body {
                 box-shadow: 0px 2px 2px 0px #1c1f474b;
             }
 
+            .urgente {
+
+                background: $red;
+                color: white;
+                width: 200px;
+                height: 110px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 0px 2px 2px 0px #1c1f474b;
+  
+                animation-name: parpadeo;
+                animation-duration: 1s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+              
+                -webkit-animation-name:parpadeo;
+                -webkit-animation-duration: 1s;
+                -webkit-animation-timing-function: linear;
+                -webkit-animation-iteration-count: infinite;
+              }
+              
+              @-moz-keyframes parpadeo{  
+                0% { opacity: 2.0; }
+                50% { opacity: 0.0; }
+                100% { opacity: 2.0; }
+              }
+              
+              @-webkit-keyframes parpadeo {  
+                0% { opacity: 2.0; }
+                50% { opacity: 0.0; }
+                 100% { opacity: 2.0; }
+              }
+              
+              @keyframes parpadeo {  
+                0% { opacity: 2.0; }
+                 50% { opacity: 0.0; }
+                100% { opacity: 2.0; }
+              }
+
             // clasificacion pacientes
 
             #clasificacion {
 
                 width: 95%;
-                margin-bottom: 20px;
+                margin-bottom: 3px;
 
                 h1 {
                     font-size: 23px;
